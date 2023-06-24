@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1016972821118",
+    "firebase_url": "https://online-pharmecy-default-rtdb.firebaseio.com",
+    "project_id": "online-pharmecy",
+    "storage_bucket": "online-pharmecy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016972821118:android:1cd6a380d23ace49ff0e2f",
+        "android_client_info": {
+          "package_name": "com.app.onlinepharmecy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016972821118-ph88ilg3upebol5uh3me8t37h7mj7349.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKTjB7DW3uSsc6bfjXv01ME2RDzr0raCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016972821118-ph88ilg3upebol5uh3me8t37h7mj7349.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016972821118:android:89574f25ce957211ff0e2f",
+        "android_client_info": {
+          "package_name": "com.lrsltd.onlinepharmecy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016972821118-ph88ilg3upebol5uh3me8t37h7mj7349.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKTjB7DW3uSsc6bfjXv01ME2RDzr0raCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016972821118-ph88ilg3upebol5uh3me8t37h7mj7349.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

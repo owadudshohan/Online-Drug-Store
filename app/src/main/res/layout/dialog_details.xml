@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_bag"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/m_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Napa"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/d_green"
+            android:textSize="@dimen/m_txt"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/m_dose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500 mg"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/s_txt"
+            />
+
+        <ImageView
+            android:id="@+id/m_img"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/md"
+            />
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/m_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Napa"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/s_txt"
+                />
+
+            <TextView
+                android:id="@+id/m_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price : 10/-"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/n_txt"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/lin_cncl"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:id="@+id/btn_minus"
+                    android:foreground="@drawable/ripple"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="3dp"
+                    app:cardBackgroundColor="@color/l_red"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:gravity="center"
+                        android:src="@drawable/minus"
+                        android:layout_gravity="center"
+                        android:paddingTop="5dp"
+                        app:tint="@color/white"
+                        android:paddingBottom="5dp"
+
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:id="@+id/m_total"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textColor="@color/d_green"
+                    android:textSize="@dimen/l_txt"
+                    android:textStyle="bold"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    android:id="@+id/btn_add"
+                    android:layout_width="0dp"
+                    android:foreground="@drawable/ripple"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="3dp"
+                    app:cardBackgroundColor="@color/d_green"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:gravity="center"
+                        android:src="@drawable/ic_add"
+                        android:layout_gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mt_price"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price : 10/-"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/n_txt"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:id="@+id/m_cancel"
+                android:foreground="@drawable/ripple"
+                android:clickable="true"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@color/l_red"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/n_txt"
+                    android:layout_gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
+                android:id="@+id/m_add_cart"
+                android:layout_width="0dp"
+                android:foreground="@drawable/ripple"
+                android:clickable="true"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@color/d_green"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/n_txt"
+                    android:layout_gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
